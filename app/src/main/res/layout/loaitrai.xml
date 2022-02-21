@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="16dp"
+   android:orientation="vertical">
+    <TextView
+
+        android:id="@+id/tvLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/alike_angular"
+        android:gravity="start"
+        android:text="Cửa Hàng"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <me.relex.circleindicator.CircleIndicator2
+        android:id="@+id/indicator"
+        app:ci_drawable="@drawable/style_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+</LinearLayout>
